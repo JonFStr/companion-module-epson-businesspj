@@ -1,4 +1,4 @@
-const { Regex } = require('@companion-module/base')
+const {Regex} = require('@companion-module/base')
 
 module.exports = {
 	getConfigFields() {
@@ -19,11 +19,17 @@ module.exports = {
 				regex: Regex.IP,
 			},
 			{
-                type: 'checkbox',
-                label: 'HTTPS Connection',
-                id: 'https',
-                default: false
-            },
+				type: 'textinput',
+				id: 'password',
+				label: 'WebControl Password',
+				width: 6
+			},
+			{
+				type: 'checkbox',
+				label: 'HTTPS Connection',
+				id: 'https',
+				default: false
+			},
 			/*{
 				type: 'checkbox',
 				id: 'polling',

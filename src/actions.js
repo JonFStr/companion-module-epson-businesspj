@@ -102,7 +102,7 @@ module.exports = {
 				}
 			],
 			callback: async function (action) {
-				self.sendCommand('_OSD_IMLUMLEVEL=' + action.options.brightness);
+				self.sendCommand('_OSD_BRIGHT=' + action.options.brightness);
 			}
 		};
 		
